@@ -1,0 +1,8 @@
+<%% form_for @<%= singular_name %>, :html => {:multipart => true} do |f| %>
+<% attributes.each do |attribute| -%>
+	<%%= f.e_<%= attribute.field_type %> :<%= attribute.name %>, :label => true %>
+<% end -%>
+	<%%= f.e_submit %>
+<%% end %>
+
+<%%= link_to t('<%= singular_name %>.show', :default => :'model.show'), @<%= singular_name %> %> | <%%= link_to t('<%= singular_name %>.list', :default => :'model.list'), <%= plural_name %>_path %>

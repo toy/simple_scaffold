@@ -1,0 +1,11 @@
+= Simple Scaffold
+
+Simplified version of rails bultin scaffold
+
+== Install
+
+  script/plugin install git://github.com/toy/simple_scaffold.git
+
+== Usage
+
+  script/plugin simple_scaffold Game

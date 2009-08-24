@@ -1,0 +1,5 @@
+<ul class="<%= plural_name %>">
+	<%%= render :partial => '<%= plural_name %>/<%= singular_name %>', :collection => @<%= plural_name %> %>
+</ul>
+
+<%%= link_to t('<%= singular_name %>.new', :default => :'model.new'), new_<%= singular_name %>_path %>
